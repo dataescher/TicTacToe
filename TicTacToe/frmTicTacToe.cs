@@ -259,7 +259,9 @@ namespace TicTacToe {
 		/// <summary>User clicked the button to exit the application.</summary>
 		/// <param name="sender">Source of the event.</param>
 		/// <param name="e">Event information.</param>
-		private void BtnExit_Click(Object sender, EventArgs e) => Application.Exit();
+		private void BtnExit_Click(Object sender, EventArgs e) {
+			Application.Exit();
+		}
 
 		/// <summary>User clicked the button to start the new game.</summary>
 		/// <param name="sender">Source of the event.</param>
@@ -274,28 +276,38 @@ namespace TicTacToe {
 		/// <summary>User clicked the label indicating the winner.</summary>
 		/// <param name="sender">Source of the event.</param>
 		/// <param name="e">Event information.</param>
-		private void LblWinner_Click(Object sender, EventArgs e) => lblWinner.Visible = false;
+		private void LblWinner_Click(Object sender, EventArgs e) {
+			lblWinner.Visible = false;
+		}
 
 		/// <summary>User selected the option to be the O player.</summary>
 		/// <param name="sender">Source of the event.</param>
 		/// <param name="e">Event information.</param>
-		private void OptO_CheckedChanged(Object sender, EventArgs e) => ComputerPlay();
+		private void OptO_CheckedChanged(Object sender, EventArgs e) {
+			ComputerPlay();
+		}
 
 		/// <summary>User selected the option to be the X player.</summary>
 		/// <param name="sender">Source of the event.</param>
 		/// <param name="e">Event information.</param>
-		private void OptX_CheckedChanged(Object sender, EventArgs e) => ComputerPlay();
+		private void OptX_CheckedChanged(Object sender, EventArgs e) {
+			ComputerPlay();
+		}
 
 		/// <summary>User selected the option to have both players be computer AI.</summary>
 		/// <param name="sender">Source of the event.</param>
 		/// <param name="e">Event information.</param>
-		private void OptNeither_CheckedChanged(Object sender, EventArgs e) => ComputerPlay();
+		private void OptNeither_CheckedChanged(Object sender, EventArgs e) {
+			ComputerPlay();
+		}
 
 		/// <summary>
 		/// 	User selected the option to have both players be computer AI, and to run repeatedly.
 		/// </summary>
 		/// <param name="sender">Source of the event.</param>
 		/// <param name="e">Event information.</param>
-		private void OptTraining_CheckedChanged(Object sender, EventArgs e) => ComputerPlay();
+		private void OptTraining_CheckedChanged(Object sender, EventArgs e) {
+			ComputerPlay();
+		}
 	}
 }
