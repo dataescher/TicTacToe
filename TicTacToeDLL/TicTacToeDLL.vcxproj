@@ -179,7 +179,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TicTacToeGameEngine\TicTacToeGameEngine.vcxproj">
-      <Project>{67c360fc-b15c-4d43-8a28-9c8b8e3eb203}</Project>
+      <Project>{4abe3609-3206-4e1d-b7d7-db47ee405b14}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
