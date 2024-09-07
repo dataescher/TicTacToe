@@ -83,25 +83,25 @@ char TicTacToeGameEngine::TicTacToeGameCoord::toChar() {
 /// <returns>A new <see cref="TicTacToeGameCoord"/> object.</returns>
 TicTacToeGameEngine::TicTacToeGameCoord TicTacToeGameEngine::TicTacToeGameCoord::fromChar(char value) {
 	switch (value) {
-		default:
-		case 'A':
-			return TicTacToeGameCoord(0, 0);
-		case 'B':
-			return TicTacToeGameCoord(1, 0);
-		case 'C':
-			return TicTacToeGameCoord(2, 0);
-		case 'D':
-			return TicTacToeGameCoord(0, 1);
-		case 'E':
-			return TicTacToeGameCoord(1, 1);
-		case 'F':
-			return TicTacToeGameCoord(2, 1);
-		case 'G':
-			return TicTacToeGameCoord(0, 2);
-		case 'H':
-			return TicTacToeGameCoord(1, 2);
-		case 'I':
-			return TicTacToeGameCoord(2, 2);
+	default:
+	case 'A':
+		return TicTacToeGameCoord(0, 0);
+	case 'B':
+		return TicTacToeGameCoord(1, 0);
+	case 'C':
+		return TicTacToeGameCoord(2, 0);
+	case 'D':
+		return TicTacToeGameCoord(0, 1);
+	case 'E':
+		return TicTacToeGameCoord(1, 1);
+	case 'F':
+		return TicTacToeGameCoord(2, 1);
+	case 'G':
+		return TicTacToeGameCoord(0, 2);
+	case 'H':
+		return TicTacToeGameCoord(1, 2);
+	case 'I':
+		return TicTacToeGameCoord(2, 2);
 	}
 }
 
@@ -225,15 +225,15 @@ void TicTacToeGameEngine::printBoard() {
 				char thisChar = '\0';
 
 				switch (thisTile) {
-					case boardSquare::blankSquare:
-						thisChar = '.';
-						break;
-					case boardSquare::xSquare:
-						thisChar = 'X';
-						break;
-					case boardSquare::oSquare:
-						thisChar = 'O';
-						break;
+				case boardSquare::blankSquare:
+					thisChar = '.';
+					break;
+				case boardSquare::xSquare:
+					thisChar = 'X';
+					break;
+				case boardSquare::oSquare:
+					thisChar = 'O';
+					break;
 				}
 
 				fprintf(myFile, "%c ", thisChar);
