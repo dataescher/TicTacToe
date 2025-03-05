@@ -332,4 +332,3 @@
 		private System.Windows.Forms.RadioButton optTraining;
 	}
 }
-
